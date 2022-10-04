@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+.main-header {
+  display: grid;
+  grid-template-areas: "logo nav";
+  grid-template-columns: 1fr auto;
+  grid-template-rows: minmax(80px, auto);
+
+  padding: 0 1rem;
+
+  align-items: center;
+
+  background-color: #2dd2d5;
+  color: #fff;
+
+  box-shadow: 0 6px 18px #00000020;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main-header nav ul {
+  display: grid;
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+}
+.main-header nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #2dd2d5;
+  font-weight: bold;
+  background-color: beige;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.main-content {
+  width: auto;
+  height: 800px;
+  padding: 150px;
+  display: grid;
+  place-items: center;
+  background-color: #2dd2d5;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.content-wrapper {
+  margin-left: 1fr;
+  margin-right: 1fr;
+  padding: 200px;
+  font-size: 20px;
+}
+.main-content,
+.content-wrapper h1 {
+  font-size: 100px;
+  text-transform: capitalize;
+}
+.main-content p {
+  display: block;
+  text-transform: none;
+  font-size: x-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 700px;
+}
+
+.main-content strong {
+  color: black;
+}
+.main-content em {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+hr {
+  color: navy;
+  height: 10px;
+  background-color: navy;
+}
+#aboutme {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 800px;
+}
+
+#aboutme h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+#aboutme p {
+  display: grid;
+  place-items: center;
+  max-width: 600px;
+}
+#aboutme ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 50px;
+}
+#aboutme ul li {
+  margin-left: 100px;
+}
+#portfolio {
+  max-width: 1fr;
+  height: 800px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: peachpuff;
+}
+#portfolio h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+#portfolio .portfoliodisplay {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  place-items: center;
+}
+.titlecard {
+  height: 500px;
+  width: 300px;
+  border: solid 15px purple;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#experience {
+  height: 800px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#experience h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.footer {
+  display: grid;
+  place-items: left;
+  color: white;
+  background-color: navy;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
